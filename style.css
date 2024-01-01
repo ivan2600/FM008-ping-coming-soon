@@ -69,11 +69,29 @@ main {
   border-radius: 33px;
   border: 2px solid hsl(223, 100%, 88%);
   padding: 0 30px;
-  margin-bottom: 10px;
+}
+
+.mail-container .mail.active {
+  border: 2px solid hsl(354, 100%, 72%);
 }
 
 .mail-container .mail::placeholder {
   color: hsl(223, 100%, 88%);
+}
+
+.mail-container .alert-msg {
+  display: none;
+  color: var(--Light-Red);
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40;
+  border: none;
+  background-color: transparent;
+}
+
+.mail-container .alert-msg.active {
+  display: block;
 }
 
 .mail-container .submit {
@@ -84,6 +102,7 @@ main {
   color: white;
   letter-spacing: 0.5px;
   margin-bottom: 70px;
+  margin-top: 10px;
 }
 
 .social-container {
