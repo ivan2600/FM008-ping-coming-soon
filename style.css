@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+
+}
+
+main {
+ display: flex;
+ flex-direction: column;
+ width: 400px;
+ justify-content: center;
+ margin: 0 auto;
+}
+
+.start-container {
+  width: 400px;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.start-container img {
+  width: 60px;
+  margin: 90px auto 35px;
+}
+
+.start-container h1 {
+  font-size: 25px;
+  font-weight: 200;
+  color: var(--Gray);
+  margin-bottom: 18px;
+}
+
+.start-container h1 span {
+  font-weight: 700;
+  color: black;
+}
+
+.start-container p {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 38px;
+}
+
+.mail-container {
+  display: grid;
+  justify-content: center;
+}
+
+.mail-container .mail {
+  height: 40px;
+  width: 300px;
+  border-radius: 33px;
+  border: 2px solid hsl(223, 100%, 88%);
+  padding: 0 30px;
+  margin-bottom: 10px;
+}
+
+.mail-container .mail::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+.mail-container .submit {
+  height: 40px;
+  border-radius: 33px;
+  border: none;
+  background-color: var(--Blue);
+  color: white;
+  letter-spacing: 0.5px;
+  margin-bottom: 70px;
+}
+
+.social-container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.big-img {
+  width: 340px;
+  margin-bottom: 140px;
+}
+
+.social-container a {
+  text-decoration: none;
+}
+
+.social-container .social-icons {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.social-container .social-icons a span {
+  color: var(--Blue);
+  border: 2px solid hsl(218, 19%, 92%);
+  padding: 7px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin: 0 4px;
+}
+
+.social-container p {
+  font-size: 12px;
+  color: var(--Gray);
+  margin-bottom: 40px;
+}
