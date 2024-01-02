@@ -71,8 +71,18 @@ main {
   padding: 0 30px;
 }
 
+.mail-container .mail:focus {
+  border-color: hsl(223, 100%, 88%);
+  outline: none;
+}
+
 .mail-container .mail.active {
   border: 2px solid hsl(354, 100%, 72%);
+}
+
+.mail-container .mail.active:focus {
+  border-color: hsl(354, 100%, 72%);
+  outline: none;
 }
 
 .mail-container .mail::placeholder {
@@ -138,4 +148,57 @@ main {
   font-size: 12px;
   color: var(--Gray);
   margin-bottom: 40px;
+}
+
+@media screen and (min-width:1200px) {
+  main {
+    width: 500px;
+   }
+   .start-container {
+     width: 500px;
+   }
+   .mail-container {
+    display: grid;
+    grid-template-areas: 
+      "mail submit"
+      "alert submit";
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  .mail-container .alert-msg {
+    grid-area: alert;
+    text-align: center;
+    margin-bottom: 40;
+  }
+  .mail-container .submit {
+    grid-area: submit;
+    height: 40px;
+    width: 190px;
+    border-radius: 33px;
+    border: none;
+    background-color: var(--Blue);
+    color: white;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    margin-top: 00px;
+  }
+  .mail-container .mail {
+    grid-area: mail;
+    height: 40px;
+    width: 300px;
+    border-radius: 33px;
+    border: 2px solid hsl(223, 100%, 88%);
+    padding: 0 30px;
+  }
+  .social-container {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .big-img {
+    width: 450px;
+    margin-bottom: 140px;
+  }
 }
